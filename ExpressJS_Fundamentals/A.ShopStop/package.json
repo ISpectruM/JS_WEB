@@ -1,0 +1,14 @@
+{
+  "name": "shopstop",
+  "version": "1.0.0",
+  "description": "Web shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IM",
+  "license": "MIT",
+  "dependencies": {
+    "standart": "^6.1.0"
+  }
+}
