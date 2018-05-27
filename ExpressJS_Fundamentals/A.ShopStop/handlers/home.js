@@ -17,7 +17,7 @@ module.exports = (req,res)=>{
                     console.log(err);
                     res.writeHead(404, {
                         'Content-Type':'text/plain'
-                    });
+                    })
 
                     res.write('404 not found!');
                     res.end();
@@ -54,4 +54,4 @@ module.exports = (req,res)=>{
     } else {
         return true;
     }
-};
+}

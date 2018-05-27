@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df26cfd4-40a3-4e5d-9587-885b1a1be2dc" name="Default" comment="ShopStop app">
+      <change afterPath="$PROJECT_DIR$/.idea/GitRepoExcersises.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/content/styles/site.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1323">
+              <caret line="85" column="2" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static-files.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js" />
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html" />
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html" />
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js" />
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js" />
+        <option value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1378" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JS_WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS_WEB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS_WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="ExpressJS_Fundamentals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS_WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="ExpressJS_Fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="A.ShopStop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS_WEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="ExpressJS_Fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="A.ShopStop" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="7.10.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Softuni\11.JS_Web\1.Express.js\GitRepoExcersises\ExpressJS_Fundamentals" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df26cfd4-40a3-4e5d-9587-885b1a1be2dc" name="Default" comment="" />
+      <created>1527249991739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527249991739</updated>
+      <workItem from="1527249993408" duration="2754000" />
+      <workItem from="1527445210904" duration="806000" />
+    </task>
+    <task id="LOCAL-00001" summary="ShopStop app">
+      <created>1527251303145</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527251303145</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ShopStop app">
+      <created>1527252089861</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527252089861</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3560000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50074404" side_tool="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" sideWeight="0.49925596" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ShopStop" />
+      <path value="$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop" />
+      <path value="$PROJECT_DIR$/ExpressJS_Fundamentals" />
+    </ignored-roots>
+    <MESSAGE value="ShopStop app" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShopStop app" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/content/styles/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/content/styles/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/config/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/views/products/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="85" column="2" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExpressJS_Fundamentals/A.ShopStop/handlers/static-files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
