@@ -19,11 +19,11 @@ module.exports = (req, res) => {
             path.join(__dirname, `..${req.pathname}`));
         res.writeHead(200, {
             'Content-Type': getContentType(req.pathname)
-        })
+        });
 
         const read = fs.createReadStream(filePath);
         read.pipe(res);
     } else {
         return true;
     }
-}
+};
