@@ -1,0 +1,16 @@
+{
+  "name": "c.moviedb",
+  "version": "1.0.0",
+  "description": "Moview Database",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ISpectruM",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-rename": "^1.2.3"
+  }
+}
