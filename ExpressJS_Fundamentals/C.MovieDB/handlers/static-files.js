@@ -27,7 +27,7 @@ module.exports = (req, res) => {
     })
 
     const read = fs.createReadStream(filePath)
-    read.pipe(res)
+    read.pipe(read)
   } else {
     return true
   }
