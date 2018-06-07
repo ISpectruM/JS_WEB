@@ -77,8 +77,7 @@ nav > ul li ul {
 nav > ul li ul li > a {
     text-decoration: none;
 }
-[type="checkbox"],
-label {
+[type="checkbox"], label {
     display: none;
 }
 @media screen and (max-width: 768px) {

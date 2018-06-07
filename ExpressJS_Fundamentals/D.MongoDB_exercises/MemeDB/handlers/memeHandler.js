@@ -5,11 +5,12 @@ const url = require('url')
 const formidable = require('formidable')
 const fs = require('fs')
 const shortId = require('shortid')
+const defaultFilesCount = 500
 const path = require('path')
 
 function viewAll (req, res) {
   let filePath = './views/viewAll.html'
-  let memes = db.getAllSortedByDate()
+  let memes = db.getAllSortedByDate().filter(meme => meme.privacy !== 'on')
 
   let dynamicContent = ''
   for (const meme of memes) {
@@ -37,25 +38,47 @@ function addMeme (req, res) {
 
     let file = files.meme
     let tempPath = file.path
+    let newSourcePath
     let fileExtension = file.name.substring(file.name.lastIndexOf('.'))
-    let newSourcePath = './public/memeStorage/' + shortId.generate() + fileExtension
-    let newPath = path.join(__dirname, '.' + newSourcePath)
+    let newFileName = shortId.generate() + fileExtension
 
-    let readedFile = fs.createReadStream(tempPath)
-    let writeFile = fs.createWriteStream(newPath)
-    readedFile.pipe(writeFile)
+    fs.readdir('./public/memeStorage/', (err, files) => {
+      if (err) {
+        console.log(err)
+        return
+      }
+      let foldersCount = files.length
 
-    let Meme = {
-      id: shortId.generate(),
-      title: fields.memeTitle,
-      memeSrc: newSourcePath,
-      description: fields.memeDescription,
-      privacy: fields.status,
-      dateStamp: Date.now()
-    }
-    db.add(Meme)
-    db.save()
-    viewAddMeme(req, res)
+      fs.readdir(`./public/memeStorage/${foldersCount - 1}`, (err, files) => {
+        if (err) {
+          console.log(err)
+          return
+        }
+        let filesCount = files.length
+
+        newSourcePath = getSaveFolderPath(foldersCount, filesCount) + newFileName
+
+        // Upload the file to the app folder
+        let newFilePath = path.join(__dirname, '.' + newSourcePath)
+        let readStream = fs.createReadStream(tempPath)
+        let writeStream = fs.createWriteStream(newFilePath)
+        readStream.pipe(writeStream)
+
+        // Create db object
+        let Meme = {
+          id: shortId.generate(),
+          title: fields.memeTitle,
+          memeSrc: newSourcePath,
+          description: fields.memeDescription,
+          privacy: fields.status,
+          dateStamp: Date.now()
+        }
+
+        db.add(Meme)
+        db.save()
+        viewAddMeme(req, res)
+      })
+    })
   })
 }
 
@@ -69,10 +92,19 @@ function getDetails (req, res) {
     <img src="${targetedMeme.memeSrc}" alt=""/>
     <h3>Title  ${targetedMeme.title}</h3>
     <p> ${targetedMeme.description}</p>
-    <button><a href="${targetedMeme.posterSrc}">Download Meme</a></button>
+    <button><a href="${targetedMeme.memeSrc}" download>Download Meme</a></button>
     </div>`
 
   htmlFileLoader.view(res, htmlPath, dynamicContent)
+}
+
+function getSaveFolderPath (foldersCount, filesCount) {
+  if (filesCount < defaultFilesCount) {
+    return `./public/memeStorage/${foldersCount - 1}/`
+  } else {
+    fs.mkdirSync(path.join(__dirname, `../public/memeStorage/${foldersCount}`))
+    return `./public/memeStorage/${foldersCount}/`
+  }
 }
 
 module.exports = (req, res) => {
