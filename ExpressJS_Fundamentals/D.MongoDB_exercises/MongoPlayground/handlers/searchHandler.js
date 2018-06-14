@@ -89,7 +89,7 @@ module.exports = (req, res) => {
 
 function getDynamicContent (image) {
   return `<fieldset id="${image.id}>
-  <img src="${image.imageUrl}">
+  <img src="${image.URL}">
   </img><p>${image.description}<p/>
   <button onclick='location.href="/delete?id=${image._id}"' class='deleteBtn'>Delete
   </button> 

@@ -1,0 +1,30 @@
+
+    {{#meme}}
+    <div class="content">
+        <img src="{{memeSrc}}" alt=""/>
+        <h3>Title:  {{title}}</h3>
+        <p> {{description}}</p>
+        <button>
+            <a href="{{memeSrc}}" download="{{title}}.jpg" >Download Meme</a>
+        </button>
+        <button>
+            <a href="/memes/deleteMeme/{{id}}" id="delete" data-meme-id={{id}}>Delete</a>
+        </button>
+    </div>
+    {{/meme}}
+    
+    <!-- <script>
+        let $deleteButton = $('#delete');
+        $deleteButton.on('click', () => {
+            let memeId = $deleteButton.attr('data-meme-id');
+            $.post('/api/memes/delete/' + memeId)
+                .then(data => {
+                    window.location.pathname = data.location;
+                })
+                .catch(err => {
+                    $('.content')
+                        .first()
+                        .append($('<h1>').text(err));
+                })
+        })
+    </script> -->

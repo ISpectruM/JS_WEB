@@ -17,7 +17,7 @@ module.exports.addPost = (req, res) => {
       category.products.push(insertedProduct._id)
       category.save()
     })
-    res.redirect('/')
+    res.redirect('/?success=' + encodeURIComponent('Product was edited successfully!'))
   })
 }
 

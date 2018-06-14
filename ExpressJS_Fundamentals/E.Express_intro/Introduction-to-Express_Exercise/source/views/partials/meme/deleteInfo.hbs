@@ -1,0 +1,24 @@
+{{#meme}}
+<form action="/memes/deleteMeme/{{id}}" enctype=multipart/form-data method="POST">
+
+  <label for="memeTitle">Title</label>
+  <input type="text" id="memeTitle" name="memeTitle" value="{{title}}" disabled> {{/meme}} {{#genre}}
+  <select name='genreSelect' id="genreSelect" disabled>
+    {{> genre/option}}
+  </select>
+  {{/genre}} {{#meme}}
+  <label for="memePoster">Meme URL</label>
+  <img class="memePoster" src="{{memeSrc}}" /> 
+  {{#if privacy}}
+  <input type="checkbox" name='status' id='status' value="{{privacy}}" disabled checked> public 
+  {{else}}
+  <input type="checkbox" name='status' id='status' value="{{privacy}}" disabled> public 
+  {{/if}}
+  <label for="memeDescription">Meme description</label>
+  <textarea id="memeDescription" name="memeDescription" rows="10" cols="10" disabled>
+        {{description}}
+        </textarea>
+
+  <input type="submit" value="Delete">
+</form>
+{{/meme}}

@@ -17,11 +17,16 @@ module.exports = (req, res) => {
 
 function deleteImg (req, res) {
   let imageId = qs.parse(url.parse(req.url).query)
-  Image.remove({ _id: imageId.id })
-  res.writeHead(302, {
-    'Location': '/'
+  Image.deleteOne({ _id: imageId.id }, err => {
+    if (err) {
+      console.log(err)
+      return
+    }
+    res.writeHead(302, {
+      'Location': '/'
+    })
+    res.end()
   })
-  res.end()
 }
 
 function addImage (req, res) {
