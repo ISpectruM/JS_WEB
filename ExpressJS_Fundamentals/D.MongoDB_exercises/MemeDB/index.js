@@ -20,4 +20,5 @@ db.load().then(() => {
   console.log('Im listening on ' + port)
 }).catch(() => {
   console.log('Failed to load DB')
-})
+});
+
