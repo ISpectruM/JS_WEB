@@ -4,6 +4,7 @@ import './App.css'
 import Menu from './components/Common/Menu'
 import Register from './components/User/Register'
 import Login from './components/User/Login';
+import CreatePokemons from './components/Pokemons/Create'
 
 class App extends Component {
   constructor(props) {
@@ -11,26 +12,27 @@ class App extends Component {
 
     this.state = {
       menuLinks: '',
-      route: 'login'
+      route: ''
     }
   }
 
   showApropriatePage = () => {
-    let route = this.state.route    
-    if ( route === 'login') {
-      return <Login route={() => this.setRoute() }/>
-    } else if( route === 'loggedIn'){
-
+    let route = this.state.route
+    if (route === 'login' || route === '') {
+      return <Login route={this.setRoute} />
+    } else if (route === 'loggedIn') {
+      return <CreatePokemons state={this.setRoute}/>
     }
     return <Register />
   }
 
   setRoute = (route) => {
-    this.setState({ route: route })
+    localStorage.setItem('route', route)
     this.setMenuLinks()
   }
 
   componentDidMount = () => {
+    this.setState({ route: localStorage.getItem('route') })
     this.setMenuLinks()
   }
 
@@ -50,8 +52,8 @@ class App extends Component {
       register: <li className="nav-item"><a className="nav-link" onClick={() => { this.setRoute('register') }}>Register</a></li>,
       logout: <li className="nav-item"><a className="nav-link" onClick={() => this.logout()}>Logout</a></li>,
       welcome: <li className="nav-item"><a className="nav-link" >Welcome, {localStorage.getItem('name')}</a></li>
-    } 
-    
+    }
+
     if (!localStorage.getItem('token')) {
       loginLink = menuItems.login
       reisterLink = menuItems.register
@@ -71,7 +73,8 @@ class App extends Component {
           {loginLink}
           {logoutLink}
         </ul>
-      )
+      ),
+      route: localStorage.getItem('route')
     })
   }
 

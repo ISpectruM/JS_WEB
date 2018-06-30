@@ -12,6 +12,13 @@ class Login extends React.Component {
   }
 
   handleSubmit = () => {
+    if (this.state.email === '' && this.state.password === '') {
+      this.setState({ error: 'Fields can`t be empty!' })
+    } else if (this.state.password === '') {
+      this.setState({ error: 'Password can`t be empty!' })
+    } else if (this.state.email === '') {
+      this.setState({ error: 'Email can`t be empty!' })
+    }
     fetch('http://localhost:5000/auth/login',
       {
         method: 'POST',
@@ -23,9 +30,14 @@ class Login extends React.Component {
     )
       .then(data => data.json())
       .then(response => {
-        localStorage.setItem('token', response.token)
-        localStorage.setItem('name', response.user.name)
-        this.props.route('loggedIn')
+        if (response.success && response.token) {
+          localStorage.setItem('token', response.token)
+          localStorage.setItem('name', response.user.name)
+          localStorage.setItem('route', 'loggedIn')
+          this.props.route('loggedIn')
+        } else {
+          this.setState({error: 'Wrong email or password!'})
+        }
       })
       .catch(err => {
         console.log(err);
@@ -33,30 +45,34 @@ class Login extends React.Component {
   }
 
   updateProps = (event) => {
-    let property = this.state
-    property[event.target.id] = event.target.value
-    this.setState(property)
+    let state = this.state
+    let value = event.target.value
+    let element = event.target.id
+
+    state[element] = value
+    state['error'] = ''
+    this.setState(state)
   }
 
   render() {
     return (
-      <form className='col-sm-6'>
+      <form className='col-sm-6 mx-auto'>
         <h1>Login form</h1>
         <div className='form-group'>
           <label htmlFor='email' className='col-form-label'>Email address</label>
-          <input type='email' className='form-control' id='email' aria-describedby='emailHelp' placeholder='Enter email'
+          <input type='email' className='form-control' id='email' name='Name' aria-describedby='emailHelp' placeholder='Enter email'
             value={this.state.email}
             onChange={this.updateProps} />
           <small id='emailHelp' className='form-text text-muted'>We'll never share your email with anyone else.</small>
         </div>
         <div className='form-group'>
           <label htmlFor='password'>Password</label>
-          <input type='password' className='form-control' id='password' placeholder='Password'
+          <input type='password' className='form-control' id='password' name='Password' placeholder='Password'
             onChange={this.updateProps} />
         </div>
-        <div>{this.state.error}</div>
         <button type='button' className='btn btn-primary'
           onClick={this.handleSubmit}>Login</button>
+        <div className='error m-3'>{this.state.error}</div>
       </form>)
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+const REGISTER_URL = 'http://localhost:5000/auth/signup'
 
 class Register extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class Register extends React.Component {
   }
 
   handleSubmit = () => {
-    fetch('http://localhost:5000/auth/signup',
+    fetch(REGISTER_URL,
       {
         method: 'POST',
         body: JSON.stringify(this.state),
@@ -37,7 +38,7 @@ class Register extends React.Component {
 
   render() {
     return (
-      <form className='col-sm-6'>
+      <form className='col-sm-6 mx-auto'>
         <h1>Register form</h1>
         <div className='form-group'>
           <label htmlFor='exampleInputEmail1' className='col-form-label'>Email address</label>
@@ -56,9 +57,9 @@ class Register extends React.Component {
           <input type='text' className='form-control' id='name' placeholder='Username'
             onChange={this.updateProps} />
         </div>
-        <div>{this.state.error}</div>
         <button type='button' className='btn btn-primary'
-          onClick={this.handleSubmit}>Submit</button>
+          onClick={this.handleSubmit}>Register</button>
+        <div className='error m-3'>{this.state.error}</div>
       </form>)
   }
 }
