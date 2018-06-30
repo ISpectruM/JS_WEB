@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 
 import Slider from './components/Slider/Slider'
-// import Characters from './components/Characters/Characters'
+import Characters from './components/Characters/Characters'
 
 class App extends Component {
   render () {
@@ -10,7 +10,7 @@ class App extends Component {
       <div className='container'>
         <h1>React Components</h1>
         <Slider />
-        {/* <Characters /> */}
+        <Characters />
       </div>
     )
   }
