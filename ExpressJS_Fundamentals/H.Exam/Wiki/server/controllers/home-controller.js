@@ -4,6 +4,10 @@ module.exports = {
   index: (req, res) => {
     Article.find({}).populate('edits')
       .then(articles => {
+        if(articles.length === 0) {
+          return res.render('home/index');
+        }
+        
         let data = {}
         articles = articles.sort((a, b) => a.creationDate > b.creationDate)
         const lastArticle = articles.filter((a, index) => index === 0)[0]
