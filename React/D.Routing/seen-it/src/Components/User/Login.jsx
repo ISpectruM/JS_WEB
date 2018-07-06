@@ -28,6 +28,8 @@ export default class Login extends React.Component {
     .then((userInfo) => {
       Observer.trigger(Observer.events.loginUser, userInfo.username)
       authenticator.saveSession(userInfo)
+      console.log(this.props)
+      this.props.history.push('/catalog')
     })
   }
 

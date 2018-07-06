@@ -1,7 +1,7 @@
 import React from 'react'
 import Login from '../User/Login'
 import Register from '../User/Register'
-import About from '../Home/About'
+import About from './About'
 
 export default class UserSection extends React.Component {
   render () {
@@ -9,7 +9,7 @@ export default class UserSection extends React.Component {
       <section id='viewWelcome'>
         <div className='welcome'>
           <div className='signup'>
-            <Login />
+            <Login {...this.props} />
             <Register />
           </div>
           <About />

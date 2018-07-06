@@ -7,7 +7,7 @@ export default class Menu extends React.Component {
       <div className='title'>Navigation</div>
       <Link className='nav' to='/catalog'>Catalog</Link>
       <Link className='nav' to='/submit'>Submit Link</Link>
-      <Link className='nav' to='/posts'>My Posts</Link>
+      <Link className='nav' to='/userposts'>My Posts</Link>
     </div>)
   }
 }

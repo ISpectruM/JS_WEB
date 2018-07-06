@@ -1,9 +1,9 @@
 import React from 'react'
-import Article from './Article'
+import Articles from './CatalogArticles'
 import requester from '../../Services/requester'
 
 export default class Catalog extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -13,20 +13,20 @@ export default class Catalog extends React.Component {
 
   getArticles = () => {
     requester.get('appdata', 'posts', '')
-    .then(articles => {
-      this.setState({articles})
-    })
-    .catch(console.log)
+      .then(articles =>
+        this.setState({ articles })
+      )
+      .catch(console.log)
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.getArticles()
   }
 
-  render () {
+  render() {
     return (
       <section id='viewCatalog'>
-          <Article articles={this.state.articles}/>
+        <Articles articles={this.state.articles} />
       </section>
     )
   }
